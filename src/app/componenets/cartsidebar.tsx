@@ -52,7 +52,7 @@ const CartSidebar: FC<CartSidebarProps> = ({ isOpen, closeSidebar, cartItems, re
                         />
                    </div>
                    <div className="flex flex-col gap-2">
-                        <p className="font-poppins font-medium text-sm text-black w-2/3">{item.description}</p>
+                        <p className="font-poppins font-medium text-[13px] md:text-sm text-black w-2/3">{item.description}</p>
                         <div className="flex flex-row h-[20px] justify-start items-center gap-2">
                           <span>1</span>
                           <X  className=" h-3 w-3"/>
@@ -81,10 +81,10 @@ const CartSidebar: FC<CartSidebarProps> = ({ isOpen, closeSidebar, cartItems, re
           <div className="my-6 border-t "></div>
             <div className="flex gap-6  px-8"> 
             <Link href='/cartsec'>
-              <button className="w-[131px] h-[31px] rounded-[50px] hover:bg-black hover:text-white border border-[#000000] font-normal text-[14px]">View Cart</button>
+              <button className="md:w-[131px] w-[90px] h-[31px] rounded-[50px] hover:bg-black hover:text-white border border-[#000000] font-normal text-[14px]">View Cart</button>
             </Link>
               <Link href='/checkoutsec'>
-                 <button className="w-[131px] h-[31px] rounded-[50px] hover:bg-white hover:text-black bg-black text-white border border-[#000000] font-normal text-[14px]">Checkout</button>
+                 <button className="md:w-[131px] w-[90px] h-[31px] rounded-[50px] hover:bg-white hover:text-black bg-black text-white border border-[#000000] font-normal text-[14px]">Checkout</button>
               </Link>
             </div>
           
