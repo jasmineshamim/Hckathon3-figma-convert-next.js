@@ -226,7 +226,7 @@ const ProductSec: React.FC<ProductSecProps> = ({ heading, description }) => {
                 width={487}
                 height={497}
                 alt={product.description}
-                className="object-right-bottom mb-6 h-[250px] w-[350px] md:h-[200px] md:w-[255px] transform group-hover:scale-105 transition-all duration-300"
+                className="object-right-bottom mb-6 h-[200px] w-[290px] md:h-[200px] md:w-[255px] transform group-hover:scale-105 transition-all duration-300"
               />
 
               <div className="w-full flex flex-col justify-center items-center gap-2 p-2">
