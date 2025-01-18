@@ -74,7 +74,7 @@ const CartSidebar: FC<CartSidebarProps> = ({ isOpen, closeSidebar, cartItems, re
 
         {/* Cart Summary */}
         <div className="mt-5">
-          <div className="flex md:justify-between w-[150px] gap-4 md:gap-0 px-8  md:w-2/3 text-sm font-medium text-black">
+          <div className="flex justify-between w-[150px] px-4 md:px-8 w-2/3 text-sm font-medium text-black">
             <span className="font-normal">Subtotal</span>
             <span className=" text-[#B88E2F]">Rs. {subtotal.toLocaleString()}</span>
           </div>
