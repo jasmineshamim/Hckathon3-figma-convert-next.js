@@ -42,7 +42,7 @@ const CartSidebar: FC<CartSidebarProps> = ({ isOpen, closeSidebar, cartItems, re
             cartItems.map((item, index) => (
               <div key={index} className="flex items-center justify-between mb-4">
                 <div className="flex items-center justify-center gap-5">
-                   <div className="flex items-center justify-center h-[90px] w-[90px] bg-[#FBEBB5] rounded-[10px]">
+                   <div className="flex items-center justify-center h-[80px] w-[80px] md:h-[90px] md:w-[90px] bg-[#FBEBB5] rounded-[10px]">
                         <Image 
                             src={item.img} 
                             height={300}
@@ -52,7 +52,7 @@ const CartSidebar: FC<CartSidebarProps> = ({ isOpen, closeSidebar, cartItems, re
                         />
                    </div>
                    <div className="flex flex-col gap-2">
-                        <p className="font-poppins font-medium text-[13px] md:text-sm text-black w-2/3">{item.description}</p>
+                        <p className="font-poppins font-medium text-[13px] md:text-sm text-black w-[100px] md:w-2/3">{item.description}</p>
                         <div className="flex flex-row h-[20px] justify-start items-center gap-2">
                           <span>1</span>
                           <X  className=" h-3 w-3"/>
@@ -74,17 +74,17 @@ const CartSidebar: FC<CartSidebarProps> = ({ isOpen, closeSidebar, cartItems, re
 
         {/* Cart Summary */}
         <div className="mt-5">
-          <div className="flex justify-between  px-8  w-2/3 text-sm font-medium text-black">
+          <div className="flex justify-between gap-5 md:gap-0 px-8  w-2/3 text-sm font-medium text-black">
             <span className="font-normal">Subtotal</span>
             <span className=" text-[#B88E2F]">Rs. {subtotal.toLocaleString()}</span>
           </div>
           <div className="my-6 border-t "></div>
             <div className="flex gap-6  px-8"> 
             <Link href='/cartsec'>
-              <button className="md:w-[131px] w-[90px] h-[31px] rounded-[50px] hover:bg-black hover:text-white border border-[#000000] font-normal text-[14px]">View Cart</button>
+              <button className="md:w-[131px] w-[100px] h-[31px] rounded-[50px] hover:bg-black hover:text-white border border-[#000000] font-normal text-[14px]">View Cart</button>
             </Link>
               <Link href='/checkoutsec'>
-                 <button className="md:w-[131px] w-[90px] h-[31px] rounded-[50px] hover:bg-white hover:text-black bg-black text-white border border-[#000000] font-normal text-[14px]">Checkout</button>
+                 <button className="md:w-[131px] w-[100px] h-[31px] rounded-[50px] hover:bg-white hover:text-black bg-black text-white border border-[#000000] font-normal text-[14px]">Checkout</button>
               </Link>
             </div>
           
